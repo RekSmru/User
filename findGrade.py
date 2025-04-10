@@ -1,38 +1,39 @@
-    # Student Grade Calculator
+    # Students Grade Calculator
 
 try:
     # Taking user input
-    marks = float(input("Enter your marks (0-100): "))
+    score = int(input ("Please enter your score : "))
 
-    # Validate the marks are within a plausible range (0-100)
-    if 0 <= marks <= 100:
+    # Validate the scores are within a possible range(0-100)
+    if 0 <= score <= 100:
 
         # Grade classification
 
-    # grade = A: 90 and above
-        if marks >= 90:
-            grade = "A"
+    # student_grade = A: 90 and above
+        if score >= 90:
+           student_grade = "A"
 
-    # grade = B: between 80 and 89
-        elif marks >= 80:
-            grade = "B"
+    # student_grade = B: between 80 and 89
+        elif score >= 80:
+            student_grade = "B"
 
-    # grade = C: between 70 and 79
-        elif marks >= 70:
-            grade = "C"
+    # student_grade = C: between 70 and 79
+        elif score >= 70:
+            student_grade = "C"
 
-    # grade = D: between 60 and 69
-        elif marks >= 60:
-            grade = "D"
+    # student_grade = D: between 60 and 69
+        elif score >= 60:
+            student_grade = "D"
 
-    # grade = F: below 60
+    # student_grade = F: below 60
         else:
-            grade = "F"
-        print(f"Your grade is: {grade}")
+            student_grade = "F"
+
+        print(f"Your grade is: {student_grade}")
 
     # Out-of-range error  
     else:
-        print("Error: Marks must be between 0 and 100.")
+        print("Error: Your score must be between 0 and 100.")
 
     # Invalid Input
 except ValueError:
